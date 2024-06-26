@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>day2 of learning HTML</title>
+    <body>
+      <h1>ADDING URLS</h1>
+      <!-- <a href="" target="">tag is used to add urls</a>
+      in href link is written and in target if we write "_blank" then link is opened in a new tab  -->
+      <a href="https://www.youtube.com/feed/you">go to youtube in same tab</a><br>
+      <a href="https://www.youtube.com/feed/you" target="_blank">go to you tube in a new tab</a><br>
+      <!-- <forms action="">tag is used to store the data that the user provide</forms>
+      action attribute specify where the data of the user to be sent  here the backend.php is for example -->
+      <h1><i>Taking Input From The User</i></h1>
+      <forms action="backend.php">
+        <!-- <label for="">Tag is used to tell users the value that should be entered in the associated input field<label>in for attribute the id of the element is written -->
+        <!-- <input type="" placeholder="">tag is used take input from the user and in thr type attribute we have to write what type of input is taken like text,number,date,etc. and place holder tag is used if you want to if there is already some written in the box -->
+         <br>
+        <div>
+          <label for="name">NAME: </label>
+          <input type="text" id="name" placeholder="E.g: anil kumar">
+        </div>
+        <br>
+        <div>
+          <label for="mnumber">Mob No.: </label>
+          <input type="number" id="mnumber" placeholder="974xxxxxx5">
+        </div>
+        <br>
+        <div>
+          <label for="sex">SEX:<br></label>
+          <!-- here we give all the input tag has same name="" so there wiil only one can selected  -->
+          MALE <input type="radio" name="gender" id="sex">  FEMALE <input type="radio" name="gender" id="sex"> OTHER <input type="radio" name="gender" id="sex">
+        </div>
+        <br>
+        <div>
+          Are you above 58 ? <input type="checkbox" name="age"><br>
+          <!-- if we write checed in the in the tag then threre this was already marked -->
+          Are you below 18 ? <input type="checkbox" checked>
+        </div>
+        <br>
+        <div>
+          write about yourself<br>
+          <label for="about"></label>
+          <textarea name="comment" id="about" rows="10" cols="50"></textarea>
+        </div>
+        <div>
+          <label for="range">RANGE :</label>
+          <input type="range" id="range" min="0" max="100" value="25">
+        </div>
+        <br>
+        <div>
+          <label for="pwd">PASSWORD :</label>
+          <input type="password" id="pwd">
+        </div>
+        <br>
+        <div>
+          <label for="file">FILE: </label>
+          <input type="file" id="file">
+        </div>
+        <br>
+        <div>
+          <label for="choose">Favourite car: </label>
+          <select name="car" id="choose">
+            <option value="lambo">lamborgini</option>
+            <option value="merc" selected>mercedes</option>
+            <option value="bmw">BMW</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="submit"></label>
+          <input type="submit" id="submit">
+        </div>
+      </forms>
+    </body>
+  </head>
+</html>
